@@ -1,0 +1,43 @@
+version: '2'
+services:
+  web:
+    build: ./web
+    ports:
+     - "5000:80"
+    volumes:
+     - ./web/code:/var/www/html/
+    links:
+      - api
+    # depends_on:
+    #  - api
+  api:
+    build: ./api
+    ports:
+      - "8080:8888"
+    volumes:
+      - ./api/code:/opt/csynapse
+    links:
+      - db
+      - queue
+      - mongo
+    depends_on:
+      - db
+      - queue
+      - mongo
+  db:
+    build: ./db
+    ports:
+      - "3306:3306"
+  queue:
+    image: rabbitmq
+    hostname: csynapse_queue
+  tasks:
+    build: ./tasks
+    links:
+      - mongo
+      - queue
+      - db
+    volumes:
+      - ./tasks/code:/opt/csynapse
+  mongo:
+    image: mongo
