@@ -4,3 +4,4 @@ This will allow us to work on CSynapse on our development machines and be able t
 
 To get started, run get_code.sh. This will copy the various projects to where they need to go.
 
+Then, assuming docker is installed, run docker-compose up to run.
