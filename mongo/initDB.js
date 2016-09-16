@@ -18,3 +18,10 @@ db.algorithms.insert({"_id":"lars","description":"Lars"})
 db.algorithms.insert({"_id":"orthogonalMatchingPursuit","description":"Orthongonal Matching Pursuit"})
 db.algorithms.insert({"_id":"bayesianRidge","description":"Bayesian Ridge Regression"})
 db.algorithms.insert({"_id":"logisticRegression","description":"Logistic Regression"})
+
+
+db.users.insert({"_id":"nick"})
+db.users.insert({"_id":"sam"})
+db.users.insert({"_id":"daniel"})
+db.users.insert({"_id":"andrew"})
+db.users.insert({"_id":"abby"})
