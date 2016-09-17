@@ -10,11 +10,13 @@ CMD ["/sbin/my_init"]
 
 RUN apt-get update
 
-RUN apt-get install -y python-pip libmysqlclient-dev libssl-dev python-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev
+RUN apt-get install -y python-pip libmysqlclient-dev libssl-dev python-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev libmemcached-dev git
+
+ADD ./code/requirements.txt /tmp/requirements.txt
+
+RUN pip install -r /tmp/requirements.txt
 
 ADD ./code /opt/csynapse
-
-RUN pip install -r /opt/csynapse/requirements.txt
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
