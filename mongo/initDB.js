@@ -1,0 +1,27 @@
+use csynapse
+
+db.algorithms.insert({"_id":"svm","description":"Adaboost with Decision Trees"})
+db.algorithms.insert({"_id":"knearest","description":"Knearest Neighbors"})
+db.algorithms.insert({"_id":"guassNB","description":"Gaussian Naive Bayes"})
+db.algorithms.insert({"_id":"sgd","description":"Stochastic Gradient Descent"})
+db.algorithms.insert({"_id":"adaBoost","description":"Adaboost"})
+db.algorithms.insert({"_id":"randomForest","description":"Random Forest"})
+db.algorithms.insert({"_id":"perceptron","description":"Perceptron"})
+db.algorithms.insert({"_id":"nearestCentroid","description":"Nearest Centroid"})
+db.algorithms.insert({"_id":"passiveAggressive","description":"Passive Agressive Classifier"})
+db.algorithms.insert({"_id":"decisionTree","description":"Decision Tree"})
+db.algorithms.insert({"_id":"leastSquares","description":"Least Squares"})
+db.algorithms.insert({"_id":"ridge","description":"Ridge Regression"})
+db.algorithms.insert({"_id":"lasso","description":"Lasso"})
+db.algorithms.insert({"_id":"elasticNet","description":"Elastic Net"})
+db.algorithms.insert({"_id":"lars","description":"Lars"})
+db.algorithms.insert({"_id":"orthogonalMatchingPursuit","description":"Orthongonal Matching Pursuit"})
+db.algorithms.insert({"_id":"bayesianRidge","description":"Bayesian Ridge Regression"})
+db.algorithms.insert({"_id":"logisticRegression","description":"Logistic Regression"})
+
+
+db.users.insert({"_id":"nick"})
+db.users.insert({"_id":"sam"})
+db.users.insert({"_id":"daniel"})
+db.users.insert({"_id":"andrew"})
+db.users.insert({"_id":"abby"})
