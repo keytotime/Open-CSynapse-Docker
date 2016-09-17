@@ -20,10 +20,12 @@ services:
       - db
       - queue
       - mongo
+      - memcached
     depends_on:
       - db
       - queue
       - mongo
+      - memcached
   db:
     build: ./db
     ports:
@@ -43,3 +45,5 @@ services:
     image: mongo
     volumes:
       - ./mongo/db:/data/db
+  memcached:
+    image: memcached
