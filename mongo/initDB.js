@@ -8,11 +8,13 @@ db.algorithms.insert({"_id":"algorithms", "svm":{"description":"Support Vector M
 "decisionTree":{"description":"Decision Tree"},"leastSquares":{"description":"Least Squares"},
 "ridge":{"description":"Ridge Regression"},"lasso":{"description":"Lasso"},
 "elasticNet":{"description":"Elastic Net"},"lars":{"description":"Lars"},"orthogonalMatchingPursuit":{"description":"Orthongonal Matching Pursuit"},
-"bayesianRidge":{"description":"Bayesian Ridge Regression"},"logisticRegression":{"description":"Logistic Regression"}})
+"bayesianRidge":{"description":"Bayesian Ridge Regression"},"logisticRegression":{"description":"Logistic Regression"},
+"adaline":{"description":"adaline neural network"},"hebbian":{"description":"hebbian neural network"},
+"multiLayerPerceptronSig":{"description":"multilayer perceptron with sigmoid"},"multiLayerPerceptronTan":{"description":"multilayer perceptron with tan"}})
 
 // init gang of 5
 db.users.insert({"_id":"nick"})
 db.users.insert({"_id":"sam"})
 db.users.insert({"_id":"daniel"})
 db.users.insert({"_id":"andrew"})
-db.users.insert({"_id":"abby"})
+db.users.insert({"_id":"abhi"})
