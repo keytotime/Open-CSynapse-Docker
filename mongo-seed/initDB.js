@@ -12,9 +12,3 @@ db.algorithms.insert({"_id":"algorithms", "svm":{"description":"Support Vector M
 "adaline":{"description":"adaline neural network"},"hebbian":{"description":"hebbian neural network"},
 "multiLayerPerceptronSig":{"description":"multilayer perceptron with sigmoid"},"multiLayerPerceptronTan":{"description":"multilayer perceptron with tan"}})
 
-// init gang of 5
-db.users.insert({"_id":"nick"})
-db.users.insert({"_id":"sam"})
-db.users.insert({"_id":"daniel"})
-db.users.insert({"_id":"andrew"})
-db.users.insert({"_id":"abhi"})
