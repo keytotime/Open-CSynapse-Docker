@@ -18,19 +18,14 @@ services:
     volumes:
       - ./api/code:/opt/csynapse
     links:
-      - db
       - queue
       - mongo
       - memcached
     depends_on:
-      - db
       - queue
       - mongo
       - memcached
-  db:
-    build: ./db
-    ports:
-      - "3306:3306"
+      - tasks
   queue:
     image: rabbitmq
     hostname: csynapse_queue
@@ -39,13 +34,12 @@ services:
     links:
       - mongo
       - queue
-      - db
     volumes:
       - ./tasks/code:/opt/csynapse
   mongo:
     image: mongo
-#    volumes:
-#      - ./mongo/db:/data/db
+   volumes:
+     - ./mongo/db:/data/db
     ports:
       - "27017:27017"
   mongo-seed:
@@ -58,7 +52,6 @@ services:
     image: ubuntu
     entrypoint: /bin/bash
     links:
-      - db
       - queue
       - mongo
       - memcached
