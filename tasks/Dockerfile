@@ -10,7 +10,7 @@ CMD ["/sbin/my_init"]
 
 RUN apt-get update
 
-RUN apt-get install -y python-pip libmysqlclient-dev libssl-dev python-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev libmemcached-dev git openjdk-8-jre
+RUN apt-get install -y python-pip libssl-dev python-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev libmemcached-dev git openjdk-8-jre --fix-missing
 
 ADD ./code/requirements.txt /tmp/requirements.txt
 
