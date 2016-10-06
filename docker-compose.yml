@@ -38,8 +38,8 @@ services:
       - ./tasks/code:/opt/csynapse
   mongo:
     image: mongo
-   volumes:
-     - ./mongo/db:/data/db
+    volumes:
+      - ./mongo/db:/data/db
     ports:
       - "27017:27017"
   mongo-seed:
