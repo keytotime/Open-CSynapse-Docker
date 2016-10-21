@@ -10,7 +10,7 @@ CMD ["/sbin/my_init"]
 
 RUN apt-get update
 
-RUN apt-get install -y apache2 php php-mysql php-pdo libapache2-mod-php php-curl
+RUN apt-get install -y apache2 php php-pdo libapache2-mod-php php-curl
 
 ADD ./code /var/www/html/
 

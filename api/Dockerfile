@@ -11,7 +11,7 @@ FROM phusion/baseimage:0.9.19
 
 RUN apt-get update
 
-RUN apt-get install -y python-pip libssl-dev python-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev libmemcached-dev git openjdk-8-jre --fix-missing
+RUN apt-get install -y python-pip libssl-dev python-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev libmemcached-dev git openjdk-8-jre libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk --fix-missing
 
 ADD ./code/requirements.txt /tmp/requirements.txt
 
