@@ -16,6 +16,8 @@ ADD ./code /var/www/html/
 
 ADD ./start.sh /etc/build/start.sh
 
+ADD ./conf/php.ini /etc/php/7.0/apache2/php.ini
+
 #CMD "/bin/bash"
 CMD "/etc/build/start.sh"
 

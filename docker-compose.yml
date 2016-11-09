@@ -9,8 +9,6 @@ services:
      - ./web/logs:/var/log/apache2
     links:
       - api
-    # depends_on:
-    #  - api
   api:
     build: ./api
     ports:
