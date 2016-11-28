@@ -17,9 +17,6 @@ ADD ./code/requirements.txt /tmp/requirements.txt
 
 RUN pip install -r /tmp/requirements.txt
 
-#RUN pip install git+https://github.com/BlueDragonX/beaker_mongodb.git
-#RUN pip install git+git://github.com/didip/beaker_extensions.git
-
 ADD ./code /opt/csynapse
 
 CMD /opt/csynapse/infrastructure.py
