@@ -25,10 +25,15 @@ db.algorithms.insert({"_id":"algorithms", "svm":{"description":"Support Vector M
 "paramInfo":[{"name":"C","default":1,"type":"float","greater":"0","lessOrEqual":"none", "description":"Maximum step size (regularization)."}]},
 "decisionTree":{"description":"Decision Tree", "name":"Decision Tree","type":"supervised",
 "paramInfo":[{"name":"criterion","default":"gini","type":"set","values":["gini","entropy"],"description":"The function to measure the quality of a split."}]},
-"adaline":{"description":"adaline neural network", "name": "Adaline Neural Net","type":"supervised","paramInfo":[]},
-"hebbian":{"description":"hebbian neural network", "name": "Hebbian Neural Net","type":"supervised","paramInfo":[]},
-"multiLayerPerceptronSig":{"description":"multilayer perceptron with sigmoid", "name":"Multi-Layer Perceptron Sigmoid","type":"supervised","paramInfo":[]},
-"multiLayerPerceptronTan":{"description":"multilayer perceptron with tan", "name":"Multi-Layer Perceptron Tan","type":"supervised","paramInfo":[]}})
+"Adaline":{"description":"adaline neural network", "name": "Adaline Neural Net","type":"supervised","paramInfo":[]},
+"Hebbian":{"description":"hebbian neural network", "name": "Hebbian Neural Net","type":"supervised","paramInfo":[]},
+"Multilayer_Neural_Network_Gaussian":{"description":"multilayer  neural network using gaussian loss", "name":"Multi-Layer Neural Net Guassian Loss","type":"supervised","paramInfo":[]},
+"Multilayer_Neural_Network_sin":{"description":"multilayer neural network with sin loss", "name":"Multi-Layer Neural Network Sin","type":"supervised","paramInfo":[]},
+"Multilayer_Neural_Network_Linear":{"description":"multilayer neural network with linear loss", "name":"Multi-Layer Neural Network Linear","type":"supervised","paramInfo":[]},
+"layer":{"description":"layered neural network", "name":"layered neural net","type":"supervised","paramInfo":[]},
+"Maxnet":{"description":"Maxnet", "name":"Maxnet","type":"supervised","paramInfo":[]},
+"rbf_neural_network":{"description":"Radial Basis Neural Network", "name":"Radial Basis Neural Network","type":"supervised","paramInfo":[]},
+"Tan":{"description":"multilayer network with tan loss", "name":"Multi-Layer Neural Network Tan","type":"supervised","paramInfo":[]}})
 
 // "leastSquares":{"description":"Least Squares", "name":"Least Square Regression","type":"regression"},
 // "ridge":{"description":"Ridge Regression", "name":"Ridge Regression","type":"regression"},
