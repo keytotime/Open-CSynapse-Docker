@@ -30,6 +30,7 @@ db.algorithms.insert({"_id":"algorithms", "svm":{"description":"Support Vector M
 "Multilayer_Neural_Network_Gaussian":{"description":"multilayer  neural network using gaussian loss", "name":"Multi-Layer Neural Net Guassian Loss","type":"supervised","paramInfo":[]},
 "Multilayer_Neural_Network_sin":{"description":"multilayer neural network with sin loss", "name":"Multi-Layer Neural Network Sin","type":"supervised","paramInfo":[]},
 "Multilayer_Neural_Network_Linear":{"description":"multilayer neural network with linear loss", "name":"Multi-Layer Neural Network Linear","type":"supervised","paramInfo":[]},
+"Multi_Neural_Network_Step":{"description":"multilayer neural network with step loss", "name":"Multi-Layer Neural Network Step","type":"supervised","paramInfo":[]},
 "layer":{"description":"layered neural network", "name":"layered neural net","type":"supervised","paramInfo":[]},
 "Maxnet":{"description":"Maxnet", "name":"Maxnet","type":"supervised","paramInfo":[]},
 "rbf_neural_network":{"description":"Radial Basis Neural Network", "name":"Radial Basis Neural Network","type":"supervised","paramInfo":[]},
