@@ -18,7 +18,9 @@ ADD ./start.sh /etc/build/start.sh
 
 ADD ./conf/php.ini /etc/php/7.0/apache2/php.ini
 
-#CMD "/bin/bash"
+ADD ./conf/apache2.conf /etc/apache2/apache2.conf
+
+# CMD "/bin/bash"
 CMD "/etc/build/start.sh"
 
 # Clean up APT when done.
